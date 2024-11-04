@@ -2,6 +2,8 @@ html, body, div {
   border: 0;
   margin: 0;
   padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .navbar-wrapper {
@@ -119,7 +121,7 @@ p.lead {
 	  grid-column: auto;
 	  grid-row: auto;
 	}
-  }
+}
 
 .bottom-margin {
 	margin-bottom: 24px;
@@ -148,6 +150,10 @@ footer {
 	color: #fff;
 	padding: 40px;
 	opacity: .75;
+
+	@media screen and (max-width: 441px) {
+		padding: 15px;
+	}
 }
 
 footer a {
